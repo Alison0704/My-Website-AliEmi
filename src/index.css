@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+:root {
+    --main-Color60: #0E1142;
+    --main-Color30: #DFC9A7; 
+    --main-Color10: #FF9900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--main-Color10) var(--main-Color60);
+}
+img {
+    border: 2px solid var(--main-Color30);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#root {
+    background-color: transparent;
+}
+
+html {
+    font-size: 70%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Jura;
+    background-color: var(--main-Color60);
+}
+
+section {
+    padding: 0 12rem;
+    margin: 0;
+    margin-top: 4rem;
+}
+
+p {
+    font-family: Jura;
+    font-size: 1.5rem;
+}
+
+.hidden-content {
+    display: none;
+}
+
+.show-message {
+    height: 100vh;
+    color: var(--main-Color10);
+    font-size: 2rem;
+    padding: 2rem;
+}
+.buttons{
+    transition: background-color 0.3s ease;
+}
+
+.buttons:hover {
+    background-color: var(--main-Color10);
+    color: var(--main-Color60);
+    border-color: var(--main-Color30);
+}
+@media screen and (max-width: 1024px) {
+    .hidden-content {
+        display: none;
+    }
+
+    .show-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
