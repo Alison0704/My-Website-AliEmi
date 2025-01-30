@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
+@import "tailwindcss/preflight"; /* Replaces @tailwind base */
+@tailwind utilities;
 
 :root {
     --main-Color60: #0E1142;
